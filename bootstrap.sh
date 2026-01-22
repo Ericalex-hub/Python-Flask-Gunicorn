@@ -12,3 +12,6 @@
 - pipenv shell
 - pipenv install flask gunicorn
 - touch application.py wsgi.py
+- sudo nano application.py
+- sudo nano wsgi.py
+- flask run --host '0.0.0.0'
