@@ -20,3 +20,6 @@ which gunicorn
 #/home/vagrant/.local/share/virtualenvs/web-python-_yLKVanR/bin/gunicorn
 sudo systemctl start nginx
 sudo systemctl status nginx
+cd /etc/systemd/system
+sudo touch flask_app.service
+sudo systemctl daemon-reload
