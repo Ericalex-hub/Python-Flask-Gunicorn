@@ -2,3 +2,5 @@
 - pip3 install pipenv
 - PATH=$PATH:/home/$USER/.local/bin
 - pipenv --version
+- pip3 install python-dotenv
+- sudo mkdir -p /var/www/app
