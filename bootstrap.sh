@@ -23,3 +23,8 @@ sudo systemctl status nginx
 cd /etc/systemd/system
 sudo touch flask_app.service
 sudo systemctl daemon-reload
+systemctl enable flask_app
+systemctl start flask_app
+cd /etc/nginx/sites-available
+sudo nano app.conf
+sudo ln -s /etc/nginx/sites-available/app.conf /etc/nginx/sites-enabled/
