@@ -10,3 +10,5 @@
 - touch .env
 - sudo nano .env
 - pipenv shell
+- pipenv install flask gunicorn
+- touch application.py wsgi.py
