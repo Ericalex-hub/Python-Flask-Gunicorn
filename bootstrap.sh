@@ -28,3 +28,9 @@ systemctl start flask_app
 cd /etc/nginx/sites-available
 sudo nano app.conf
 sudo ln -s /etc/nginx/sites-available/app.conf /etc/nginx/sites-enabled/
+ls -l /etc/nginx/sites-enabled/ | grep app.conf
+sudo nginx -t
+sudo systemctl restart nginx
+sudo systemctl status nginx
+cd /var/www
+git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart
