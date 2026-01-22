@@ -4,3 +4,5 @@
 - pipenv --version
 - pip3 install python-dotenv
 - sudo mkdir -p /var/www/app
+- sudo chown -R $USER:www-data /var/www/app
+- sudo chmod -R 775 /var/www/app
