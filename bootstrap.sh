@@ -1,3 +1,4 @@
-sudo apt update
-sudo apt install -y python3-pip nginx
-pip3 install pipenv python-dotenv
+- sudo apt-get update && sudo apt-get install -y python3-pip
+- pip3 install pipenv
+- PATH=$PATH:/home/$USER/.local/bin
+- pipenv --version
