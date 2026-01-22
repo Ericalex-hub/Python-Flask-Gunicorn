@@ -34,3 +34,5 @@ sudo systemctl restart nginx
 sudo systemctl status nginx
 cd /var/www
 git clone https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart
+pipenv install -r requirements.txt
+gunicorn --workers 4 --bind 0.0.0.0:5000 wsgi:app
